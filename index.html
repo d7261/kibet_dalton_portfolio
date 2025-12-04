@@ -45,7 +45,10 @@
       <div>
         <h1>Kibet Dalton <span class="tag">— Aspiring Software Developer</span></h1>
         <div class="lead">Computer Science student focused on Python, Web Development, and Databases. Building practical apps that solve real problems.</div>
-        <div style="margin-top:8px;color:var(--muted);font-size:14px">Nairobi, Kenya • <a href="mailto:daltonlagat5535@gmail.com" style="color:var(--accent);text-decoration:none">daltonlagat5535@gmail.com</a> • <a id="githubLink" href="#" style="color:var(--accent);text-decoration:none">GitHub</a></div>
+        <div style="margin-top:8px;color:var(--muted);font-size:14px">Nairobi, Kenya • 
+          <a href="mailto:daltonlagat5535@gmail.com" style="color:var(--accent);text-decoration:none">daltonlagat5535@gmail.com</a> • 
+          <a href="https://github.com/d7261" target="_blank" style="color:var(--accent);text-decoration:none">GitHub</a>
+        </div>
       </div>
     </header>
 
@@ -113,7 +116,6 @@
               <strong>St. Patrick’s High School — Iten</strong> (2018 – 2022) • KCSE
             </div>
           </section>
-
         </div>
       </main>
 
@@ -132,28 +134,31 @@
               <div>Nairobi, Kenya</div>
 
               <div style="margin-top:12px">
-<a id="downloadCv" class="btn" href="KibetDaltonCV.pdf" download="KibetDaltonCV.pdf">Download CV</a>
+                <a class="btn" href="Attachment_Cv_Kibet.pdf" download="KibetDaltonCV.pdf">Download CV</a>
               </div>
             </div>
           </section>
 
           <section style="margin-top:16px">
             <h2>Get in touch</h2>
-            <form name="contact" method="POST" data-netlify="true">
-              <input type="hidden" name="form-name" value="contact">
+            <form name="contact" method="POST" action="https://formspree.io/f/mnqxyzab">
+              <input type="hidden" name="_redirect" value="/thank-you.html">
+
               <label style="display:block;margin-bottom:8px;color:var(--muted)">Your name</label>
-              <input name="name" required style="width:100%;padding:10px;border-radius:8px;border:1px solid rgba(255,255,255,0.03);background:transparent;color:#e6eef6">
+              <input name="name" required
+                     style="width:100%;padding:10px;border-radius:8px;border:1px solid rgba(255,255,255,0.03);background:transparent;color:#e6eef6">
 
               <label style="display:block;margin:10px 0 8px;color:var(--muted)">Email</label>
-              <input name="email" type="email" required style="width:100%;padding:10px;border-radius:8px;border:1px solid rgba(255,255,255,0.03);background:transparent;color:#e6eef6">
+              <input name="email" type="email" required
+                     style="width:100%;padding:10px;border-radius:8px;border:1px solid rgba(255,255,255,0.03);background:transparent;color:#e6eef6">
 
               <label style="display:block;margin:10px 0 8px;color:var(--muted)">Message</label>
-              <textarea name="message" rows="4" required style="width:100%;padding:10px;border-radius:8px;border:1px solid rgba(255,255,255,0.03);background:transparent;color:#e6eef6"></textarea>
+              <textarea name="message" rows="4" required
+                        style="width:100%;padding:10px;border-radius:8px;border:1px solid rgba(255,255,255,0.03);background:transparent;color:#e6eef6"></textarea>
 
               <button type="submit" class="btn" style="margin-top:10px">Send Message</button>
             </form>
           </section>
-
         </div>
 
         <div style="margin-top:16px;text-align:center;color:var(--muted)">
@@ -166,14 +171,5 @@
       <div>Want changes? I can update the content, add a GitHub link, or convert this into a tiny React site — tell me what you want next.</div>
     </footer>
   </div>
-
-  <script>
- const githubUrl = 'https://github.com/d7261';
-document.getElementById('githubLink').href = githubUrl;
-document.getElementById('githubLink').innerText = 'GitHub';
-;
-
-</script>
-
 </body>
 </html>
