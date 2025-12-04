@@ -1,0 +1,179 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Kibet Dalton — Portfolio</title>
+  <meta name="description" content="Kibet Dalton — Aspiring Software Developer | Python, Web, SQL" />
+
+  <style>
+    :root{--bg:#0f1724;--card:#0b1220;--muted:#94a3b8;--accent:#06b6d4;--glass:rgba(255,255,255,0.03)}
+    *{box-sizing:border-box}
+    body{margin:0;font-family:Inter,system-ui,Segoe UI,Roboto,'Helvetica Neue',Arial;color:#e6eef6;background:linear-gradient(180deg,var(--bg),#021025);-webkit-font-smoothing:antialiased}
+    .container{max-width:980px;margin:36px auto;padding:28px}
+
+    header{display:flex;align-items:center;gap:20px}
+    .avatar{width:86px;height:86px;border-radius:12px;background:linear-gradient(135deg,var(--accent),#7c3aed);display:flex;align-items:center;justify-content:center;color:#021025;font-weight:700;font-size:32px}
+    h1{margin:0;font-size:28px}
+    .tag{color:var(--accent);font-weight:600}
+    .lead{color:var(--muted);margin-top:8px}
+
+    .grid{display:grid;grid-template-columns:1fr 320px;gap:22px;margin-top:22px}
+    .card{background:var(--card);padding:18px;border-radius:12px;box-shadow:0 6px 18px rgba(2,6,23,0.6);}
+    section h2{margin:0 0 12px 0;font-size:16px}
+    .skills{display:flex;flex-wrap:wrap;gap:8px}
+    .chip{background:var(--glass);padding:8px 10px;border-radius:999px;color:var(--muted);font-weight:600}
+    .stack{display:flex;flex-direction:column;gap:8px}
+
+    .project{border-radius:10px;padding:12px;background:linear-gradient(180deg,rgba(255,255,255,0.02),transparent);}
+    .project + .project{margin-top:10px}
+    .meta{font-size:13px;color:var(--muted)}
+
+    .contact-row{display:flex;flex-direction:column;gap:8px}
+    .btn{display:inline-block;padding:10px 14px;border-radius:10px;background:var(--accent);color:#021025;font-weight:700;text-decoration:none}
+
+    footer{margin-top:28px;text-align:center;color:var(--muted);font-size:13px}
+
+    /* responsive */
+    @media(max-width:900px){.grid{grid-template-columns:1fr}.container{padding:18px}}
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <div class="avatar">KD</div>
+      <div>
+        <h1>Kibet Dalton <span class="tag">— Aspiring Software Developer</span></h1>
+        <div class="lead">Computer Science student focused on Python, Web Development, and Databases. Building practical apps that solve real problems.</div>
+        <div style="margin-top:8px;color:var(--muted);font-size:14px">Nairobi, Kenya • <a href="mailto:daltonlagat5535@gmail.com" style="color:var(--accent);text-decoration:none">daltonlagat5535@gmail.com</a> • <a id="githubLink" href="#" style="color:var(--accent);text-decoration:none">GitHub</a></div>
+      </div>
+    </header>
+
+    <div class="grid">
+      <main>
+        <div class="card">
+          <section>
+            <h2>About</h2>
+            <p style="color:var(--muted);line-height:1.6">I’m a curious and hardworking Computer Science student driven to build robust, user-friendly software. I enjoy solving problems with code, learning modern tooling, and creating projects that demonstrate real value. Currently seeking an academic attachment (Jan–Apr 2026) at DSL Systems and Solutions Ltd.</p>
+          </section>
+
+          <section style="margin-top:14px">
+            <h2>Skills</h2>
+            <div class="skills">
+              <div class="chip">Python</div>
+              <div class="chip">HTML & CSS</div>
+              <div class="chip">JavaScript</div>
+              <div class="chip">SQL</div>
+              <div class="chip">Git / GitHub</div>
+              <div class="chip">Flask</div>
+              <div class="chip">TensorFlow (basics)</div>
+              <div class="chip">Linux</div>
+            </div>
+          </section>
+
+          <section style="margin-top:14px">
+            <h2>Projects</h2>
+            <div class="project">
+              <strong>Smart Lost & Found Campus App</strong>
+              <div class="meta">HTML/CSS/JS • Flask • PostgreSQL • TensorFlow</div>
+              <p style="color:var(--muted);margin-top:8px">A full-stack application combining keyword search and image similarity (feature extraction with ResNet18) to help users recover lost items on campus.</p>
+            </div>
+
+            <div class="project">
+              <strong>DaltonCodesDaily</strong>
+              <div class="meta">Content creation • Video editing</div>
+              <p style="color:var(--muted);margin-top:8px">Daily short-form coding videos for beginners produced and edited with CapCut to document learning progress and help others.</p>
+            </div>
+
+            <div class="project">
+              <strong>Personal Portfolio (This Site)</strong>
+              <div class="meta">HTML • CSS • JavaScript</div>
+              <p style="color:var(--muted);margin-top:8px">A clean, responsive one-page portfolio to showcase projects and contact information.</p>
+            </div>
+          </section>
+
+          <section style="margin-top:14px">
+            <h2>Experience</h2>
+            <div style="color:var(--muted)">
+              <strong>Cyber Café Attendant — Nandi Hills</strong>
+              <div class="meta">Customer support, troubleshooting, printing & e-services</div>
+              <p style="color:var(--muted);margin-top:6px">Provided basic PC support, assisted customers with online portals (eCitizen), and managed day-to-day operations.</p>
+
+              <strong style="margin-top:10px;display:block">Freelance IT Support</strong>
+              <div class="meta">Software installs, network setup</div>
+              <p style="color:var(--muted);margin-top:6px">Ad-hoc support for students and small setups.</p>
+            </div>
+          </section>
+
+          <section style="margin-top:14px">
+            <h2>Education</h2>
+            <div style="color:var(--muted)">
+              <strong>BSc Computer Science</strong> — St. Pauls University, Limuru (2022 – Present)
+              <br>
+              <strong>St. Patrick’s High School — Iten</strong> (2018 – 2022) • KCSE
+            </div>
+          </section>
+
+        </div>
+      </main>
+
+      <aside>
+        <div class="card">
+          <section>
+            <h2>Contact</h2>
+            <div class="contact-row">
+              <div style="color:var(--muted)">Email</div>
+              <div><a href="mailto:daltonlagat5535@gmail.com" class="btn">Email Dalton</a></div>
+
+              <div style="margin-top:10px;color:var(--muted)">Phone</div>
+              <div style="font-weight:700">+254 725 096 930</div>
+
+              <div style="margin-top:10px;color:var(--muted)">Location</div>
+              <div>Nairobi, Kenya</div>
+
+              <div style="margin-top:12px">
+                <a id="downloadCv" class="btn" href="#">Download CV</a>
+              </div>
+            </div>
+          </section>
+
+          <section style="margin-top:16px">
+            <h2>Get in touch</h2>
+            <form name="contact" method="POST" data-netlify="true">
+              <input type="hidden" name="form-name" value="contact">
+              <label style="display:block;margin-bottom:8px;color:var(--muted)">Your name</label>
+              <input name="name" required style="width:100%;padding:10px;border-radius:8px;border:1px solid rgba(255,255,255,0.03);background:transparent;color:#e6eef6">
+
+              <label style="display:block;margin:10px 0 8px;color:var(--muted)">Email</label>
+              <input name="email" type="email" required style="width:100%;padding:10px;border-radius:8px;border:1px solid rgba(255,255,255,0.03);background:transparent;color:#e6eef6">
+
+              <label style="display:block;margin:10px 0 8px;color:var(--muted)">Message</label>
+              <textarea name="message" rows="4" required style="width:100%;padding:10px;border-radius:8px;border:1px solid rgba(255,255,255,0.03);background:transparent;color:#e6eef6"></textarea>
+
+              <button type="submit" class="btn" style="margin-top:10px">Send Message</button>
+            </form>
+          </section>
+
+        </div>
+
+        <div style="margin-top:16px;text-align:center;color:var(--muted)">
+          <small>Built with care • Ready for Netlify</small>
+        </div>
+      </aside>
+    </div>
+
+    <footer>
+      <div>Want changes? I can update the content, add a GitHub link, or convert this into a tiny React site — tell me what you want next.</div>
+    </footer>
+  </div>
+
+  <script>
+    const githubUrl = 'https://github.com/d7261';
+    const cvUrl = 'file:///D:/DOCS/Attachment_Cv_Kibet.pdf'; 
+
+    document.getElementById('githubLink').href = githubUrl;
+    document.getElementById('githubLink').innerText = 'GitHub';
+    document.getElementById('downloadCv').href = cvUrl;
+  </script>
+</body>
+</html>
