@@ -132,7 +132,7 @@
               <div>Nairobi, Kenya</div>
 
               <div style="margin-top:12px">
-                <a id="downloadCv" class="btn" href="#">Download CV</a>
+<a id="downloadCv" class="btn" href="KibetDaltonCV.pdf" download="KibetDaltonCV.pdf">Download CV</a>
               </div>
             </div>
           </section>
@@ -168,12 +168,12 @@
   </div>
 
   <script>
-    const githubUrl = 'https://github.com/d7261';
-    const cvUrl = 'file:///D:/DOCS/Attachment_Cv_Kibet.pdf'; 
+ const githubUrl = 'https://github.com/d7261';
+document.getElementById('githubLink').href = githubUrl;
+document.getElementById('githubLink').innerText = 'GitHub';
+;
 
-    document.getElementById('githubLink').href = githubUrl;
-    document.getElementById('githubLink').innerText = 'GitHub';
-    document.getElementById('downloadCv').href = cvUrl;
-  </script>
+</script>
+
 </body>
 </html>
